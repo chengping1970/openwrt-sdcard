@@ -9,3 +9,19 @@
  	compatible = "xunlong,orangepi-pc", "allwinner,sun8i-h3";
  
  	aliases {
+@@ -114,6 +114,14 @@
+ 	status = "okay";
+ };
+ 
++&i2c0 {
++	status = "okay";
++};
++
++&i2c1 {
++	status = "okay";
++};
++
+ &emac {
+ 	phy-handle = <&int_mii_phy>;
+ 	phy-mode = "mii";
+
