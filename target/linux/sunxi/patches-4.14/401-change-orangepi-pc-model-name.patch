@@ -9,7 +9,15 @@
  	compatible = "xunlong,orangepi-pc", "allwinner,sun8i-h3";
  
  	aliases {
-@@ -114,6 +114,14 @@
+@@ -74,6 +74,7 @@
+ 		status_led {
+ 			label = "orangepi:red:status";
+ 			gpios = <&pio 0 15 GPIO_ACTIVE_HIGH>;
++			default-state = "on";
+ 		};
+ 	};
+ 
+@@ -114,6 +115,14 @@
  	status = "okay";
  };
  
@@ -24,4 +32,12 @@
  &emac {
  	phy-handle = <&int_mii_phy>;
  	phy-mode = "mii";
-
+@@ -202,7 +211,7 @@
+ };
+ 
+ &usb_otg {
+-	dr_mode = "otg";
++	dr_mode = "host";
+ 	status = "okay";
+ };
+ 
